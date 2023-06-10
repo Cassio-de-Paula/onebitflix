@@ -38,6 +38,16 @@ export const favoriteService = {
                 courseId
             }
         })
-    }
+    },
 
+    isFavorited: async (userId: number, courseId: number) => {
+        const favorite = Favorite.findOne({
+            where: {
+                userId,
+                courseId
+            }
+        })
+
+        return favorite !== null
+    }
 }
