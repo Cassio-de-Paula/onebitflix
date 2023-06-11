@@ -59,7 +59,7 @@ const Register = function () {
             <script src="https://jsuites.net/v4/jsuites.js"></script>
         </Head>
         <main className={styles.main}>
-            <HeaderGeneric logoUrl='/' btnUrl='/logion' btnContent='Quero fazer login'/>
+            <HeaderGeneric logoUrl='/' btnUrl='/login' btnContent='Quero fazer login'/>
         <Container className='py-5'>
             <p className={styles.formTitle}><strong>Bem Vindo(a) ao Onebitflix!</strong></p>
             <Form className={styles.form} onSubmit={handleRegister}>
