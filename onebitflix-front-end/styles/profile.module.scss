@@ -104,6 +104,8 @@
     font-weight: bold;
     font-size: 15px;
     padding: 6px 20px;
+    display: block;
+    margin: 10px auto;
 
     &:hover {
         border-color: $darkRed;
@@ -118,7 +120,7 @@
     padding-bottom: 50px;
 }
 
-.renderForm {
+.renderFormBtn {
     display: block;
     width: 200px;
     border: 1px solid $darkGray;
@@ -129,9 +131,16 @@
 
     &:hover {
         background-color: transparent;
-        border-color: $lightRed;
-        color: $darkGray;
-
+        color: $lightRed;
+        border-color: $darkGray;
+    }
+    &:active {
+      background-color: transparent;
+      box-shadow: none;
+    }
+    &:focus{
+      background-color: transparent;
+      box-shadow: none;
     }
 }
 
