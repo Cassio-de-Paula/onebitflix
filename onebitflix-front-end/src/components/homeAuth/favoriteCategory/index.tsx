@@ -15,8 +15,11 @@ const FavoriteCategory = function () {
 
         <>
         <p className={styles.titleCategory}>MINHA LISTA</p>
-        {data.data.courses.lenght >= 1 ? (
-            <SlideComponent course={data.data.courses}/>
+            {console.log(data.data.courses)}
+        {data.data.courses.length > 0 ? (
+            <div className={styles.slideContainer}>
+                <SlideComponent course={data.data.courses}/>
+            </div>
         ) : (
             <p className='text-center pt-3 h5'><strong>Você não possui nenhum curso favorito</strong></p>
         )}
