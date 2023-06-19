@@ -1,10 +1,11 @@
 import jwt from 'jsonwebtoken'
+import { JWT_KEY } from '../config/enviroment'
 
-const secret = 'chave-do-jwt'
+const secret = JWT_KEY
 
 export const jwtService = {
     signToken: (payLoad: string | object | Buffer, expiration: string) => {
-        return jwt.sign(payLoad,secret, {
+        return jwt.sign(payLoad, JWT_KEY, {
             expiresIn: expiration
         })
     },
