@@ -1,6 +1,6 @@
 import { CategoryType, categoriesService } from "../../../services/categoriesServices"
 import useSWR from "swr"
-import styles from '../../../../styles//slideCategory.module.scss'
+import styles from '../../../../styles/slideCategory.module.scss'
 import ListCategoriesSlide from "../listCategoriesSlide"
 import PageSpinner from "@/components/common/spinner"
 

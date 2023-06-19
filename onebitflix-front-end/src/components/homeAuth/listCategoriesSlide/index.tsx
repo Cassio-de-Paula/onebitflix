@@ -20,8 +20,12 @@ const ListCategoriesSlide = function ({categoryId, categoryName}: props) {
 
     return (
         <>
-        <p className={styles.titleCategory}>{categoryName}</p>
+        <div className={styles.categoryInfo}>
+            <div className={styles.titleContainer}>
+                <p className={styles.titleCategory}>{categoryName}</p>
+            </div>
         <SlideComponent course={data.data.courses}/>
+        </div>
         </>
     )
 }
